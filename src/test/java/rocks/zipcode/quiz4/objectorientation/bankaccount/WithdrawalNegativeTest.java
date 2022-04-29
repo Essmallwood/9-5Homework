@@ -11,27 +11,27 @@ import rocks.zipcode.quiz4.objectorientation.account.Transactable;
 @SuppressWarnings("all")
 public class WithdrawalNegativeTest {
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void test1() {
         test(0.0, 1.0);
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void test2() {
         test(10.0, 50.0);
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void test3() {
         test(10.0, -50.0);
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void test4() {
         test(00.0, -50.0);
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void test5() {
         test(00.0, 0.01);
     }

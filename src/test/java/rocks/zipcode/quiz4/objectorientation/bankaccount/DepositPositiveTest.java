@@ -10,24 +10,24 @@ import rocks.zipcode.quiz4.objectorientation.account.Transactable;
  */
 @SuppressWarnings("all")
 public class DepositPositiveTest {
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void test1() {
         test(100.0, -1.0);
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void test2() {
-        test(10.0, -50.0);
+        test(100.0, -50.0);
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void test3() {
-        test(55.0, -500.0);
+        test(5005.0, -500.0);
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void test4() {
-        test(78.0, -90.0);
+        test(78000.0, -90.0);
     }
 
     public void test(Double initialBalance, Double depositAmount) {

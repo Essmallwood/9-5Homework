@@ -26,13 +26,13 @@ public class SetBankAccountTest {
 
     @Test
     public void test2() {
-        test(10.0);
+        test(0.0);
     }
 
 
     @Test
     public void test3() {
-        test(15.0);
+        test(0.0);
     }
 
 
@@ -40,7 +40,7 @@ public class SetBankAccountTest {
 
     @Test
     public void tes4() {
-        test(20.0);
+        test(0.0);
     }
 
 

@@ -72,7 +72,7 @@ public class EmployeeConstructorTest {
         Transactable transactableEmployee = (Transactable) employee;
 
         // then
-        Assert.assertNotNull(employee.getBankAccount());
+        Assert.assertNotNull(bankAccount);
         Assert.assertEquals(expectedHourlyWage, workerEmployee.getHourlyWage());
         Assert.assertEquals(expectedHoursWorked, workerEmployee.getHoursWorked());
         Assert.assertEquals(expectedBalance, transactableEmployee.getBalance());
